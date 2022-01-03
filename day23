@@ -1,0 +1,16 @@
+beli = str (input ("masukkan barang yang dibeli : "))
+harga_tv = int (input ("masukkan harga tv : "))
+harga_kipas = int (input ("masukkan harga kipas : "))
+harga_keduanya = harga_tv + harga_kipas
+
+if beli == "tv" :
+	diskon = harga_tv * 50/100
+elif beli == "kipas" : 
+    diskon = harga_kipas * 30/100
+elif beli == "tv & kipas":
+	diskon = harga_keduanya * 80/100
+
+total = harga_keduanya - diskon
+print ("harga keduanya = Rp. " , format (harga_keduanya))
+print ("diskon yg didapat = " , format (diskon))
+print ("total pembayaran = Rp. " , format (total))
