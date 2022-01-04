@@ -1,0 +1,28 @@
+#menentukan gaji bersih 
+
+gaji = int(input('Masukman Gaji anda: '))
+pekerjaan =input('Masukkan Pekerjaan anda: ')
+pajak = 5/100
+potongan = gaji*pajak
+
+if(pekerjaan == 'pns'):
+	pjk_pns = 5/100
+	pot = gaji*(pajak+pjk_pns)
+	gaji_bersih = gaji-pot
+	print('Potongan Pajak sebesar 10% : Rp.',pot)
+	print('Gaji Bersih Sebesar: Rp.',gaji_bersih)
+elif(pekerjaan == 'nelayan'):
+	pjk_nly = 4/100
+	pot = gaji*(pajak+pjk_nly)
+	gaji_bersih = gaji-pot
+	print('Potongan Pajak sebesar 9% : Rp.',pot)
+	print('Gaji Bersih Sebesar: Rp.',gaji_bersih)
+elif(pekerjaan == 'petani'):
+	pjk_ptn = 3/100
+	pot = gaji*(pajak+pjk_ptn)
+	gaji_bersih = gaji-pot
+	print('Potongan Pajak sebesar 8% : Rp.',pot)
+	print('Gaji Bersih Sebesar: Rp.',gaji_bersih)
+else:
+	print('anda mendapat potongan sebesar 5% :Rp.',potongan)
+	print('Total Gaji Bersih Anda adalah: Rp.',gaji-potongan)
