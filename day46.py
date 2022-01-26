@@ -3,4 +3,4 @@ def bilangan_prima (x):
 		if x % i == 0:
 			return False
 	return True
-print ("bilangan prima = " , 6 , bilangan_prima(6))
+print (bilangan_prima(6))
